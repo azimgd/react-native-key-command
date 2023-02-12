@@ -1,5 +1,6 @@
 import _ from 'underscore';
 import Events from 'events';
+import constants from './constants';
 
 const EventEmitter = new Events();
 
@@ -18,27 +19,6 @@ EventEmitter.addListener = (type, callback) => {
 };
 
 const commands = [];
-const constants = {
-    keyInputDownArrow: 'keyInputDownArrow',
-    keyInputEscape: 'keyInputEscape',
-    keyInputLeftArrow: 'keyInputLeftArrow',
-    keyInputRightArrow: 'keyInputRightArrow',
-    keyInputUpArrow: 'keyInputUpArrow',
-    keyInputEnter: 'keyInputEnter',
-    keyModifierCapsLock: 'keyModifierCapsLock',
-    keyModifierCommand: 'keyModifierCommand',
-    keyModifierControl: 'keyModifierControl',
-    keyModifierControlCommand: 'keyModifierControlCommand',
-    keyModifierControlOption: 'keyModifierControlOption',
-    keyModifierControlOptionCommand: 'keyModifierControlOptionCommand',
-    keyModifierNumericPad: 'keyModifierNumericPad',
-    keyModifierOption: 'keyModifierOption',
-    keyModifierOptionCommand: 'keyModifierOptionCommand',
-    keyModifierShift: 'keyModifierShift',
-    keyModifierShiftCommand: 'keyModifierShiftCommand',
-    keyModifierShiftControl: 'keyModifierShiftControl',
-    keyModifierAlternate: 'keyModifierAlternate'
-};
 
 /**
  * Gets modifiers from a keyboard event.
